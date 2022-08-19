@@ -46,7 +46,11 @@ Instantiation can be done on any system with docker and docker-compose installed
 
      `docker compose up`
 
-  7. Give it about 5 minutes to start up and point your browser to the ip of your ELK cluster, port 5601
+  7. Give it about 5 minutes to start up and install the elastic mappings for the pensando index
+
+      `curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_index_template/pensando-fwlog?pretty' -d @./elasticsearch/pensando_fwlog_mapping.json`
+
+  8. Point your browser to the ip of your ELK cluster, port 5601
 
   8. In Kibana, import ```./kibana/pensando-dss-elk.ndjson``` into your saved objects
 
