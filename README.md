@@ -10,6 +10,19 @@ applications and tools used for said monitoring and analysis and deploy them in 
 Instantiation can be done on any system with docker and docker-compose installed.
 
 ## Running ELK-Pensando
+
+---
+**NOTE**
+
+This branch works with the following software.
+
+CXOS: 10.10.1010 <br/>
+PSM:  1.49.3-T-3
+
+If these do not match your current install, [check one of the other branches](https://gitlab.com/pensando/tbd/siem/elastic/elk-pensando/-/branches)
+
+---
+
   #### Documented version
   To get up and running with Pensando's ELK implementation, but need a bit more guidance than a basic readme, [click here](https://pensando.gitlab.io/tbd/siem/elastic/elk-pensando/index.html)
 
