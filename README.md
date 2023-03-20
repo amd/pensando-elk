@@ -27,7 +27,9 @@ If these do not match your current install, [check one of the other branches](ht
   To get up and running with Pensando's ELK implementation, but need a bit more guidance than a basic readme, [click here](https://pensando.gitlab.io/tbd/siem/elastic/elk-pensando/index.html)
 
   #### Quick Start
-  NOTE: Use this if you are running on a *nix system, don't need docker(-compose) help and understand basic ELK admin
+  NOTE: Use the following instrcutions if you are running on a *nix system, don't need docker(-compose) help and understand basic ELK admin.
+
+
   1. Clone this repository
 
   2. Change into the directory where it is stored

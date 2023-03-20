@@ -21,6 +21,10 @@ The recommended hardware needed to run a lab instance of pensando-elk:
     + 128GB HDD
 
 
-To use pensando-elk, the host system needs `docker <https://docs.docker.com/get-docker/>`_ and `docker-compose <https://docs.docker.com/compose/install/>`_  installed before it can be instantiated.
+To use pensando-elk, the host system needs docker and docker-compose installed before it can be instantiated.
+The best way to install on Ubuntu is linked
+  here `https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04`_
+
+  If you aren't running 22.04, select the appropriate OS version from the dropdown under the graphic right below the document title.  You can also use the same site (recommended) to install docker-compose.  The reason for installing both of these via the documented method is that they work.  The default repos in Ubuntu install older versions of docker that are *not* CE and work intermittently.
 
 From there, you can :ref:`download-pensando-elk` and then :ref:`running-pensando-elk`
