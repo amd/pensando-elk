@@ -55,10 +55,13 @@ services:
     image: docker.elastic.co/logstash/logstash:${TAG}
     container_name: pensando-logstash
     restart: 'unless-stopped'
+    environment:
+    - DICT_FILE=/usr/share/logstash/config/port_to_app_mapping.yml
     volumes:
       - ${PWD}/logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml
       - ${PWD}/logstash/dss_syslog.conf:/usr/share/logstash/pipeline/dss_syslog.conf
       - ${PWD}/logstash/psm_event.conf:/usr/share/logstash/pipeline/psm_event.conf
+      - ${PWD}/logstash/port_to_app_mapping.yml:/usr/share/logstash/config/port_to_app_mapping.yml
     ports:
       - target: 5514
         published: 5514
